@@ -14,12 +14,14 @@ Welcome to the AI Spotify Cover Image Generator! This project allows users to ge
 
 📖 How It Works
 
-1)The user enters their playlist name and vibe. (Screenshot Part 1)
+1)The user enters their playlist name and vibe.
 2)The script sends a request to OpenAI's DALL·E 3 to generate a corresponding image.
 3)The generated image is downloaded, resized (256x256), and saved.
 4)The image is converted to base64 format.
-5)The script uploads the AI-generated cover to the user’s Spotify playlist using the Spotify API. (Screenshot Part 2)
+5)The script uploads the AI-generated cover to the user’s Spotify playlist using the Spotify API
 6)The user can choose to generate another cover or exit.
+
+(Look at the Demo video)
 
 📌 Insights
 
