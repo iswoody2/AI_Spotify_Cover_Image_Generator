@@ -9,6 +9,7 @@ import base64
 import requests
 from PIL import Image
 
+
 client = OpenAI(
     api_key=my_sk
 )
@@ -65,14 +66,16 @@ while True:
         #Converts the binary data into a
         image_base64 = base64.b64encode(image_file.read()).decode("utf-8")
 
-    id=input("***Input your playlist_id of your spotify playlist to upload your generated cover image***\n")
+    accept_image = input("Would you like to upload the image as your spotify cover image? (Yes/No)\n")
+    if accept_image.lower() == "yes":
+        id = input("***Input your playlist url of your spotify playlist to upload your generated cover image***\n")
+        new_id = str(id[34:56])
+        print(new_id)
+        sp.playlist_upload_cover_image(new_id, image_base64)
 
-    sp.playlist_upload_cover_image(id, image_base64)
-
-    Done = input("Would you like to generate another cover image for a playlist (Yes/No)? ").lower()
-    if Done == "no":
+    Done = input("Would you like to generate another cover image for a playlist? (Yes/No) ")
+    if Done.lower() == "no":
         False
-
 
 
 
