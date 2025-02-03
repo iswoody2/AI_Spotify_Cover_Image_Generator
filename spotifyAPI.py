@@ -75,7 +75,8 @@ while True:
 
     Done = input("Would you like to generate another cover image for a playlist? (Yes/No) ")
     if Done.lower() == "no":
-        False
+        # 'Break' would be used to exit the while loop not 'False'
+        break
 
 
 
