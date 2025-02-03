@@ -21,7 +21,7 @@ Welcome to the AI Spotify Cover Image Generator! This project allows users to ge
 5)The script uploads the AI-generated cover to the user’s Spotify playlist using the Spotify API
 6)The user can choose to generate another cover or exit.
 
-(Look at the Demo video)
+Look at the Demo video on my linkedin: https://www.linkedin.com/posts/ian-wood-4b06111a1_ai-spotify-automation-activity-7292196005100290049-PzJo?utm_source=share&utm_medium=member_desktop
 
 📌 Insights
 
